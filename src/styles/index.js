@@ -11,7 +11,33 @@ export const GlobalStyles = createGlobalStyle`
    
 }
 `;
+export const MainContainer = styled.div`
+  position:absolute;
+    margin-left:540px;
 
+.btn{
+    padding: 2px 4px;
+width:104px;
+height: 30px;
+background: #ffff;
+box-shadow: 0px 4px 4px rgba(0,0, 0, 0.25);
+border-radius: 10px;
+border:none;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+cursor:pointer;
+&::placeholder{
+    font-weight: 700;
+    font-size:16px;
+    line-height:24px;
+   color: #000;
+}
+}
+    `
+
+;
 export const Container = styled.div`
 width: 100%;
 min-height: 895px;
@@ -30,7 +56,7 @@ font-size: 48px;
 line-height: 72px;
 background-color:#000c0c;
 width:500px;
-margin-left:450px;
+margin-left:400px;
 color: #5015bd;
 cursor:pointer;
 text-align: center;
@@ -59,24 +85,35 @@ color: #000;
 `;
 export const Button = styled.button`
 position: absolute;
-margin-left: 600px;
-width: 112px;
+margin-left: 410px;
+padding: 2px 4px;
+width:104px;
 height: 30px;
-background-color:#e0daf7;
-border-radius:10px;
+background: #ffff;
+box-shadow: 0px 4px 4px rgba(0,0, 0, 0.25);
+border-radius: 10px;
 border:none;
-font-weight: 500;
+font-weight: 700;
 font-size: 16px;
-line-height:24px;
-color:#000;
-cursor: pointer;
+line-height: 24px;
+color: #000;
+cursor:pointer;
+&::placeholder{
+    font-weight: 700;
+    font-size:16px;
+    line-height:24px;
+   color: #000;
 &:hover{
     opacity:0.8;
+    background-color: green;
+    color:#ffff;
 }
 &:active{
     opacity:0.6;
 }
+
 `;
+
 export const Flex = styled.div`
 display: flex;
 flex-direction: ${(props)=> props.direction || "column"};
