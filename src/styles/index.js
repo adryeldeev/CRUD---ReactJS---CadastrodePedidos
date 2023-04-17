@@ -11,15 +11,13 @@ export const GlobalStyles = createGlobalStyle`
    
 }
 `;
-export const MainWrapper = styled.div`
-  text-align: center;
-`;
-export const MainContainer = styled.div`
-  position:absolute;
-    margin-left:500px;
 
+export const MainContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-item:center;
 .btn{
-    padding: 2px 4px;
+padding: 2px 4px;
 width:104px;
 height: 30px;
 background: #ffff;
@@ -41,33 +39,27 @@ cursor:pointer;
 @media (max-width: 806px) {
     
     .mainContainerSub{
-        margin-top:200px;
-        }
-    Input{
-        position:absolute;
-       left:-410px;
+       displa:flex;
+       flex-direction:column;
+       justify-content:center;
+       align-items:center;
+       margin-top:150px;       
     }
     .btnOne{
-        margin-top:40px;
-        position:absolute;
-        left:-499px;
+        margin-top:10px;
     }
     .btnTwo{
-        margin-top:80px;
-        position:absolute;
-        left:-500px;
+        margin-top:10px;   
     }
 
-`
-
-;
+`;
 
 export const Cadastro = styled.div`
+
 @media (max-width: 806px) {
 
   Flex{
-
-    text-align:center;
+   
     justify-content:center;
    }
 }
@@ -75,7 +67,7 @@ export const Cadastro = styled.div`
 
    Input{
     margin-right:150px;
-    text-align:center;
+    
     justify-content:center;
    }
 }
@@ -93,33 +85,45 @@ justify-content: center;
 padding: 12px 25px;
 }
 
-
+.itens-container{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
 .title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 font-weight: 600;
 font-size: 48px;
 line-height: 72px;
 background-color:#000c0c;
 width:500px;
-margin-left:400px;
+
 color: #5015bd;
 cursor:pointer;
 text-align: center;
 }
 
 @media (max-width: 806px) {
- 
+ .itens-container{
+    width:100%;
+    flex-direction:column;
+ }
     .title{
         font-size:20px;
         width:50%;
         height:50px;
-        padding:0px;
+       display:flex;
+       align-items: center;
         text-align:center;
-        margin-left:10px;
+      
     }
     Button{
-        margin-left:150px;
-        margin-top:150px;
-    }
+    left:50px;
+    top:270px;
+}
  
   }
   @media (max-width: 806px) {
@@ -134,12 +138,7 @@ text-align: center;
     }
   } 
 `;
-export  const Itens = styled.div`
-@media (max-width: 806px) {
-  overflor-y:hidden;
-  }
 
-`
 
 export const Input = styled.input`
 padding: 8px 24px;
@@ -154,21 +153,24 @@ font-size: 16px;
 line-height: 24px;
 color: #000;
 &::placeholder{
-    font-weight: 700;
-    font-size:16px;
-    line-height:24px;
-   color: #000;
+font-weight: 700;
+font-size:16px;
+line-height:24px;
+color: #000;
 
-   @media (max-width: 806px) {
-    Input{
-        margin-left:50px;
+@media (max-width: 806px) {
+Input{
+    margin-left:50px;
     }
   }
 }
 `;
 export const Button = styled.button`
 position: absolute;
-margin-left: 380px;
+display:flex;
+justify-content:center;
+left: 610px;
+margin-bottom:120px;
 padding: 2px 4px;
 width:104px;
 height: 30px;
@@ -194,20 +196,16 @@ cursor:pointer;
 &:active{
     opacity:0.6;
 }
-@media (max-width: 806px) {
-    .button{
-        margin-left:150px;
-    }
-  }
+
+
 `;
 
 export const Flex = styled.div`
 display: flex;
-flex-direction: ${(props)=> props.direction || "column"};
-justify-content:${(props)=> props.justify || "center"};
+flex-direction: ${(props) => props.direction || "column"};
+justify-content:${(props) => props.justify || "center"};
 align-items: ${(props) => props.align || "center"};
-gap:${(props)=> props.gap || "16px"};
-
+gap:${(props) => props.gap || "16px"};
 
 `;
 export const Ul = styled.ul`
@@ -217,12 +215,7 @@ flex-direction: column;
 align-items: center;
 margin-top:100px;
 @media (max-width: 806px) {
-    .ul{
-     margin-top:500px;  
-    position:absolute;
-     
-    }
-  }
+  
     .ul i{
         position:absolute;
         left:50px;
@@ -232,7 +225,7 @@ margin-top:100px;
     .ul button{
         position:absolute;
         left:130px;
-        margin-top:-15px;
+        margin-top:15px;
         }
       }
      .edit{
@@ -248,42 +241,26 @@ margin-top:100px;
 
 export const Products = styled.div`
 
-@media (max-width: 806px) {
-    margin-top:490px;
-    margin-left:-410px;
-}
 .salvar{
     margin-left:-5px;
 }
 @media (max-width: 390px) {
-margin-top:490px;
-margin-left:-20px;
 }
 
 
 `
 export const H1 = styled.h1`
-position: absolute;
-margin-left:460px;
-padding:10px 10px;
-margin-top:25px;
+display:flex;
+justify-content:center;
+margin-top:60px;
 
-@media (max-width: 806px) {
-    .subTitle{
-     position:absolute;
-        width:100%;
-        font-size:34px;
-        margin-top:350px;
-        left:-450px;
-    }
-  }
 
 `
 export const Item = styled.li`
 padding: 13px 10px 13px 24px;
 width: 354px;
 min-height: 50px;
-background: ${(props )=> (props.checked ? "#da2535": "#FFFFFF")};
+background: ${(props) => (props.checked ? "#da2535" : "#FFFFFF")};
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 list-style: none;
@@ -296,8 +273,8 @@ p {
     font-weight: 500;
     font-size:16px;
     line-height:24px;
-    text-decoration-line: ${(props )=> (props.checked ? "line-through": "")};
-    color:${(props )=> (props.checked ? "#ffff": "#000000")};
+    text-decoration-line: ${(props) => (props.checked ? "line-through" : "")};
+    color:${(props) => (props.checked ? "#ffff" : "#000000")};
     justify-content: center;
     width:80%;
     overflow-wrap:break-word;
@@ -319,7 +296,7 @@ button{
 
 i {
     font-size: 24px;
-    color:#${(props )=> (props.checked ? "#ffffff": "#000000")};
+    color:#${(props) => (props.checked ? "#ffffff" : "#000000")};
 }
 
 `;
@@ -327,6 +304,6 @@ i {
 
 export const Spacer = styled.div`
 width: 100%;
-margin:${(props)=> props.margin || "20px"};
+margin:${(props) => props.margin || "20px"};
 `;
 

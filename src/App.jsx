@@ -100,6 +100,7 @@ function CadastroDePedidos() {
 
         <Container style={{ justifyContent: "center" }}>
 
+        <div className="itens-container">
 
             <h1 className="title">Cadastro de Pedidos</h1>
             <Spacer />
@@ -190,6 +191,7 @@ function CadastroDePedidos() {
                 </Ul>
             </Products>
 
+                            </div>
         </Container>
 
 
