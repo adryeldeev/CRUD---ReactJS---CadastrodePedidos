@@ -90,6 +90,7 @@ padding: 12px 25px;
     justify-content:center;
     flex-direction:column;
     align-items:center;
+    
 }
 .title{
     display:flex;
@@ -116,6 +117,7 @@ Button{
  .itens-container{
     width:100%;
     flex-direction:column;
+    overflow:hidden;
  }
     .title{
         font-size:20px;
@@ -128,7 +130,7 @@ Button{
     }
     Button{
     left:90px;
-    top:170px;
+    top:270px;
 }
  
   }
