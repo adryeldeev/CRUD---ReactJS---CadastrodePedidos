@@ -43,7 +43,7 @@ cursor:pointer;
        flex-direction:column;
        justify-content:center;
        align-items:center;
-       margin-top:150px;       
+       margin-top:200px;       
     }
     .btnOne{
         margin-top:10px;
@@ -90,7 +90,7 @@ padding: 12px 25px;
     justify-content:center;
     flex-direction:column;
     align-items:center;
-    
+    width:100%;
 }
 .title{
     display:flex;
@@ -130,7 +130,7 @@ Button{
     }
     Button{
     left:90px;
-    top:270px;
+    top:335px;
 }
  
   }
@@ -215,6 +215,12 @@ justify-content:${(props) => props.justify || "center"};
 align-items: ${(props) => props.align || "center"};
 gap:${(props) => props.gap || "16px"};
 
+@media (max-width: 806px){
+    display: flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+}
 `;
 export const Ul = styled.ul`
 display: flex;
@@ -251,8 +257,6 @@ export const Products = styled.div`
 
 .salvar{
     margin-left:-5px;
-}
-@media (max-width: 390px) {
 }
 
 
