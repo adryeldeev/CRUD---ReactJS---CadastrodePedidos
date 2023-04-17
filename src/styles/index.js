@@ -105,7 +105,11 @@ color: #5015bd;
 cursor:pointer;
 text-align: center;
 }
-
+Button{
+    display:flex
+    justify-content:center;
+    top:270px;
+}
 @media (max-width: 806px) {
  .itens-container{
     width:100%;
@@ -121,8 +125,8 @@ text-align: center;
       
     }
     Button{
-    left:50px;
-    top:270px;
+    left:90px;
+    top:170px;
 }
  
   }
