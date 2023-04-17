@@ -11,6 +11,9 @@ export const GlobalStyles = createGlobalStyle`
    
 }
 `;
+export const MainWrapper = styled.div`
+  text-align: center;
+`;
 export const MainContainer = styled.div`
   position:absolute;
     margin-left:540px;
@@ -35,7 +38,26 @@ cursor:pointer;
    color: #000;
 }
 }
-    `
+@media (max-width: 806px) {
+    .mainContainerSub{
+        margin-top:200px;
+        }
+    Input{
+        position:absolute;
+       left:-450px;
+    }
+    .btnOne{
+        margin-top:40px;
+        position:absolute;
+        left:-549px;
+    }
+    .btnTwo{
+        margin-top:80px;
+        position:absolute;
+        left:-550px;
+    }
+
+`
 
 ;
 export const Container = styled.div`
@@ -61,6 +83,36 @@ color: #5015bd;
 cursor:pointer;
 text-align: center;
 }
+
+@media (max-width: 806px) {
+    Container{
+        display:flex;
+        flex-direction:column;
+    }
+    .title{
+        font-size:20px;
+        width:50%;
+        height:50px;
+        padding:0px;
+        text-align:center;
+        margin-left:10px;
+    }
+    Button{
+        margin-left:150px;
+        margin-top:150px;
+    }
+  }
+  @media (max-width: 806px) {
+    .form{
+        position:absolute;
+        left:35px;
+    }
+  }
+  @media (max-width: 390px){
+    .title{
+        width:100%
+    }
+  } 
 `;
 
 
@@ -81,6 +133,12 @@ color: #000;
     font-size:16px;
     line-height:24px;
    color: #000;
+
+   @media (max-width: 806px) {
+    Input{
+        margin-left:50px;
+    }
+  }
 }
 `;
 export const Button = styled.button`
@@ -111,7 +169,11 @@ cursor:pointer;
 &:active{
     opacity:0.6;
 }
-
+@media (max-width: 806px) {
+    .button{
+        margin-left:150px;
+    }
+  }
 `;
 
 export const Flex = styled.div`
@@ -120,6 +182,8 @@ flex-direction: ${(props)=> props.direction || "column"};
 justify-content:${(props)=> props.justify || "center"};
 align-items: ${(props) => props.align || "center"};
 gap:${(props)=> props.gap || "16px"};
+
+
 `;
 export const Ul = styled.ul`
 display: flex;
@@ -127,12 +191,60 @@ justify-content: center;
 flex-direction: column;
 align-items: center;
 margin-top:100px;
+@media (max-width: 806px) {
+    .ul{
+     margin-top:500px;  
+    position:absolute;
+     
+    }
+  }
+    .ul i{
+        position:absolute;
+        left:90px;
+        margin-top:-15px;
+       
+    }
+    .ul button{
+        position:absolute;
+        left:130px;
+        margin-top:-15px;
+        }
+      }
+     .edit{
+     margin-left:105px;
+        }
+      }
+}
+`
+
+export const Products = styled.div`
+
+@media (max-width: 806px) {
+    margin-top:490px;
+    margin-left:-410px;
+}
+@media (max-width: 390px) {
+margin-top:490px;
+margin-left:-20px;
+}
+
+
 `
 export const H1 = styled.h1`
 position: absolute;
 margin-left:460px;
 padding:10px 10px;
-margin-top:-55px
+margin-top:25px;
+
+@media (max-width: 806px) {
+    .subTitle{
+     position:absolute;
+        width:100%;
+        font-size:34px;
+        margin-top:350px;
+        left:-450px;
+    }
+  }
 
 `
 export const Item = styled.li`

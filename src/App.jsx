@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Button, Container, Flex, H1, Input, Item, MainContainer, Spacer, Ul } from "./styles";
+import { Button, Container, Flex, H1, Input, Item, MainContainer, Products, Spacer, Ul } from "./styles";
 
 function CadastroDePedidos() {
 
@@ -97,11 +97,12 @@ function CadastroDePedidos() {
 
     return (
 
+
         <Container style={{ justifyContent: "center" }}>
 
             <h1 className="title">Cadastro de Pedidos</h1>
             <Spacer />
-            <form >
+            <form className="form" >
                 <Flex direction="row">
                     <label htmlFor="Nome">Nome do Produto</label>
                     <Input id="Nome"
@@ -138,24 +139,27 @@ function CadastroDePedidos() {
             <Spacer />
             <Button className="btn btn-outline-light" onClick={toCadastro}>Cadastrar</Button>
             <Spacer margin="16px" />
+        
+
             <MainContainer>
-                <div>
-                    <Input type="text" onChange={handleSearch} placeholder="Pesquise o seu produto" />
+                <div className="mainContainerSub">
+                    <Input  type="text" onChange={handleSearch} placeholder="Pesquise o seu produto" />
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button className="btn btn-outline-light" onClick={() => setListDados(dadosFiltrados)}>Buscar</button>
+                    <button className="btn btn-outline-light btnOne" onClick={() => setListDados(dadosFiltrados)}>Buscar</button>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <button className="btn btn-outline-light" onClick={clearFilter}>Limpar </button>
+                    <button className="btn btn-outline-light btnTwo" onClick={clearFilter}>Limpar </button>
                 </div>
             </MainContainer>
 
-            <div >
-
-                <H1 className="subTitle">
-                    Produtos Cadastrados
+                <H1 >
+                   <p className="subTitle">Produtos Cadastrados</p>
                 </H1>
+<Products>
+                <Ul >
 
-                <Ul>
                     {listDados.map((item) => (
+                        <div> 
+
                         <>
                             <Item >
                                 <p>Produto: {item.nome}</p>
@@ -168,7 +172,7 @@ function CadastroDePedidos() {
                                     {editando && item.event === idEditando ? (
                                         <button onClick={editarDado}>Salvar</button>
                                     ) : (
-                                        <button onClick={(e) => editar(e, item)}>
+                                        <button className="edit" onClick={(e) => editar(e, item)}>
                                             <i class="bx bx-edit"></i>
                                         </button>
                                     )}
@@ -177,12 +181,16 @@ function CadastroDePedidos() {
 
                             <Spacer margin="12px" />
                         </>
+                                    </div>
                     ))}
                 </Ul>
-            </div>
+                    </Products>
+         
         </Container>
 
 
+
+                 
 
 
     )
