@@ -16,7 +16,7 @@ export const MainWrapper = styled.div`
 `;
 export const MainContainer = styled.div`
   position:absolute;
-    margin-left:540px;
+    margin-left:500px;
 
 .btn{
     padding: 2px 4px;
@@ -39,27 +39,47 @@ cursor:pointer;
 }
 }
 @media (max-width: 806px) {
+    
     .mainContainerSub{
         margin-top:200px;
         }
     Input{
         position:absolute;
-       left:-450px;
+       left:-400px;
     }
     .btnOne{
         margin-top:40px;
         position:absolute;
-        left:-549px;
+        left:-499px;
     }
     .btnTwo{
         margin-top:80px;
         position:absolute;
-        left:-550px;
+        left:-500px;
     }
 
 `
 
 ;
+
+export const Cadastro = styled.div`
+@media (max-width: 806px) {
+
+  Flex{
+
+    text-align:center;
+    justify-content:center;
+   }
+}
+@media (max-width: 390px) {
+
+   Input{
+    margin-right:150px;
+    text-align:center;
+    justify-content:center;
+   }
+}
+`
 export const Container = styled.div`
 width: 100%;
 min-height: 895px;
@@ -72,6 +92,8 @@ align-items: center;
 justify-content: center;
 padding: 12px 25px;
 }
+
+
 .title{
 font-weight: 600;
 font-size: 48px;
@@ -85,10 +107,7 @@ text-align: center;
 }
 
 @media (max-width: 806px) {
-    Container{
-        display:flex;
-        flex-direction:column;
-    }
+ 
     .title{
         font-size:20px;
         width:50%;
@@ -101,6 +120,7 @@ text-align: center;
         margin-left:150px;
         margin-top:150px;
     }
+ 
   }
   @media (max-width: 806px) {
     .form{
@@ -114,7 +134,12 @@ text-align: center;
     }
   } 
 `;
+export  const Itens = styled.div`
+@media (max-width: 806px) {
+  overflor-y:hidden;
+  }
 
+`
 
 export const Input = styled.input`
 padding: 8px 24px;
@@ -143,7 +168,7 @@ color: #000;
 `;
 export const Button = styled.button`
 position: absolute;
-margin-left: 410px;
+margin-left: 380px;
 padding: 2px 4px;
 width:104px;
 height: 30px;
@@ -200,7 +225,7 @@ margin-top:100px;
   }
     .ul i{
         position:absolute;
-        left:90px;
+        left:50px;
         margin-top:-15px;
        
     }
@@ -211,9 +236,13 @@ margin-top:100px;
         }
       }
      .edit{
-     margin-left:105px;
+     margin-left:10px;
         }
       }
+      @media (max-width: 390px){
+        .salvar{
+            margin-left:50px;
+        }
 }
 `
 
@@ -222,6 +251,9 @@ export const Products = styled.div`
 @media (max-width: 806px) {
     margin-top:490px;
     margin-left:-410px;
+}
+.salvar{
+    margin-left:-5px;
 }
 @media (max-width: 390px) {
 margin-top:490px;
