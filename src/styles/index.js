@@ -108,7 +108,9 @@ text-align: center;
 Button{
     display:flex
     justify-content:center;
+    align-items:center;
     top:270px;
+    
 }
 @media (max-width: 806px) {
  .itens-container{
