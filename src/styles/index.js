@@ -45,7 +45,7 @@ cursor:pointer;
         }
     Input{
         position:absolute;
-       left:-400px;
+       left:-410px;
     }
     .btnOne{
         margin-top:40px;
