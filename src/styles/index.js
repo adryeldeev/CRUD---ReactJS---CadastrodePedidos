@@ -14,8 +14,16 @@ export const GlobalStyles = createGlobalStyle`
 
 export const MainContainer = styled.div`
   display:flex;
-  justify-content:center;
-  align-item:center;
+ flex-direction:column;
+ .mainContainerSub{
+    display:flex;
+    flex-direction:column;
+}
+.btnTwo{
+    position:absolute;
+    top:435px;
+    margin-left:113px;   
+}
 .btn{
 padding: 2px 4px;
 width:104px;
@@ -35,21 +43,13 @@ cursor:pointer;
     line-height:24px;
    color: #000;
 }
-}
-@media (max-width: 806px) {
-    
-    .mainContainerSub{
-       displa:flex;
-       flex-direction:column;
-       justify-content:center;
-       align-items:center;
-       margin-top:200px;       
-    }
-    .btnOne{
-        margin-top:10px;
-    }
-    .btnTwo{
-        margin-top:10px;   
+
+@media (max-width: 390px) {
+        .btnTwo{
+            position:absolute;
+            top:425px;
+            margin-left:113px;   
+        }   
     }
 
 `;
@@ -80,9 +80,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 dispay:flex;
 flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 12px 25px;
 }
 
 .itens-container{
@@ -102,7 +99,7 @@ line-height: 72px;
 background-color:#000c0c;
 width:500px;
 
-color: #5015bd;
+color: #fff;
 cursor:pointer;
 text-align: center;
 }
@@ -110,7 +107,7 @@ Button{
     display:flex
     justify-content:center;
     align-items:center;
-    top:270px;
+    top:340px;
     
 }
 @media (max-width: 806px) {
@@ -130,15 +127,21 @@ Button{
     }
     Button{
     left:90px;
-    top:335px;
+    top:325px;
 }
+    Button{
+    left:90px;
+    top:325px;
+}
+.btnTwo{
+    position:absolute;
+    top:415px;
+    margin-left:113px;   
+}   
  
   }
   @media (max-width: 806px) {
-    .form{
-        position:absolute;
-        left:35px;
-    }
+    
   }
   @media (max-width: 390px){
     .title{
@@ -204,22 +207,16 @@ cursor:pointer;
 &:active{
     opacity:0.6;
 }
-
-
 `;
 
 export const Flex = styled.div`
 display: flex;
-flex-direction: ${(props) => props.direction || "column"};
-justify-content:${(props) => props.justify || "center"};
-align-items: ${(props) => props.align || "center"};
-gap:${(props) => props.gap || "16px"};
-
+flex-direction: column;
+gap:${(props) => props.gap || "10px"};
 @media (max-width: 806px){
     display: flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
+    flex-direction: column;
+    gap:${(props) => props.gap || "10px"};
 }
 `;
 export const Ul = styled.ul`
@@ -265,8 +262,6 @@ export const H1 = styled.h1`
 display:flex;
 justify-content:center;
 margin-top:60px;
-
-
 `
 export const Item = styled.li`
 padding: 13px 10px 13px 24px;
@@ -285,8 +280,6 @@ p {
     font-weight: 500;
     font-size:16px;
     line-height:24px;
-    text-decoration-line: ${(props) => (props.checked ? "line-through" : "")};
-    color:${(props) => (props.checked ? "#ffff" : "#000000")};
     justify-content: center;
     width:80%;
     overflow-wrap:break-word;
@@ -308,7 +301,7 @@ button{
 
 i {
     font-size: 24px;
-    color:#${(props) => (props.checked ? "#ffffff" : "#000000")};
+  
 }
 
 `;
