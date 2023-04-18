@@ -130,13 +130,13 @@ Button{
     top:325px;
 }
     Button{
-    left:90px;
+    left:150px;
     top:325px;
 }
 .btnTwo{
     position:absolute;
     top:415px;
-    margin-left:113px;   
+    margin-left:53px;   
 }   
  
   }
@@ -212,6 +212,7 @@ cursor:pointer;
 export const Flex = styled.div`
 display: flex;
 flex-direction: column;
+margin-left:150px;
 gap:${(props) => props.gap || "10px"};
 @media (max-width: 806px){
     display: flex;
