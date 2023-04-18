@@ -19,10 +19,15 @@ export const MainContainer = styled.div`
     display:flex;
     flex-direction:column;
 }
+
+.btns{
+    display:flex;
+    justify-content: space-evenly;
+    padding:10px  10px;
+}
 .btnTwo{
-    position:absolute;
     top:435px;
-    margin-left:113px;   
+   
 }
 .btn{
 padding: 2px 4px;
@@ -46,11 +51,12 @@ cursor:pointer;
 
 @media (max-width: 390px) {
         .btnTwo{
-            position:absolute;
+         
             top:425px;
-            margin-left:113px;   
+            
         }   
     }
+    
 
 `;
 
@@ -139,9 +145,9 @@ Button{
     top:325px;
 }
 .btnTwo{
-    position:absolute;
+   
     top:415px;
-    margin-left:53px;   
+   
 }   
  
   }
@@ -235,7 +241,7 @@ margin-top:100px;
   
     .ul i{
         position:absolute;
-        left:50px;
+        left:30px;
         margin-top:-15px;
        
     }
@@ -245,10 +251,7 @@ margin-top:100px;
         margin-top:15px;
         }
       }
-     .edit{
-     margin-left:10px;
-        }
-      }
+   
       @media (max-width: 390px){
         .salvar{
             margin-left:50px;

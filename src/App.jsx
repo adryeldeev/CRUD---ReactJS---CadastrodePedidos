@@ -150,9 +150,11 @@ function CadastroDePedidos() {
                 <div className="mainContainerSub">
                     <Input type="text" onChange={handleSearch} placeholder="Pesquise o seu produto" />
                     &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div className="btns">
                     <button className="btn btn-outline-light btnOne" onClick={() => setListDados(dadosFiltrados)}>Buscar</button>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <button className="btn btn-outline-light btnTwo" onClick={clearFilter}>Limpar </button>
+                    </div>
                 </div>
             </MainContainer>
 
