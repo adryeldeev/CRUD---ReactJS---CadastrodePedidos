@@ -63,6 +63,11 @@ export const Cadastro = styled.div`
     justify-content:center;
    }
 }
+@media (max-width: 390px){
+    .form{
+       margin-left:150px;
+     }
+   } 
 @media (max-width: 390px) {
 
    Input{
@@ -212,13 +217,13 @@ cursor:pointer;
 export const Flex = styled.div`
 display: flex;
 flex-direction: column;
-margin-left:150px;
 gap:${(props) => props.gap || "10px"};
 @media (max-width: 806px){
     display: flex;
     flex-direction: column;
     gap:${(props) => props.gap || "10px"};
 }
+
 `;
 export const Ul = styled.ul`
 display: flex;
