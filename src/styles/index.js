@@ -136,14 +136,10 @@ Button{
         text-align:center;
       
     }
-    Button{
-    left:90px;
-    top:325px;
+ Button{
+top:320px;
 }
-    Button{
-    left:150px;
-    top:325px;
-}
+
 .btnTwo{
    
     top:415px;
@@ -191,7 +187,7 @@ export const Button = styled.button`
 position: absolute;
 display:flex;
 justify-content:center;
-left: 610px;
+
 margin-bottom:120px;
 padding: 2px 4px;
 width:104px;

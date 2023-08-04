@@ -142,7 +142,7 @@ function CadastroDePedidos() {
                 </form>
             </Cadastro>
             <Spacer />
-            <Button className="btn btn-outline-light" onClick={toCadastro}>Cadastrar</Button>
+            <Button className="btn-submit btn-outline-light" onClick={toCadastro}>Cadastrar</Button>
             <Spacer margin="16px" />
 
 
